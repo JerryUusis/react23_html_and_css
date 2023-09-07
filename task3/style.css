@@ -1,0 +1,116 @@
+:root {
+    --primary-color: beige;
+    --secondary-color: peachpuff;
+    --accent-color: lightblue;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Header area */
+
+h1 {
+    margin-bottom: 35px;
+}
+
+header {
+    background-color: var(--secondary-color);
+
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+
+header li {
+    display: inline-block;
+}
+
+ul li a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #000;
+}
+
+header ul:last-child {
+    margin-right: 2rem;
+}
+
+li:hover {
+    background-color: var(--accent-color);
+}
+
+/* Section */
+
+main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+section {
+    width: 65%;
+    padding: 2rem;
+}
+
+section img {
+    height: auto;
+    width: 300px;
+    margin-bottom: 2rem;
+    float: left;
+    padding-right: 2rem;
+}
+
+p + p {
+    margin-bottom: 2rem;
+}
+
+/* Table */
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+tr,
+th,
+td {
+    border: 1px solid black;
+    padding-left: 10px
+}
+
+td {
+    width: 200px;
+}
+
+th {
+    background-color: var(--secondary-color);
+    border-bottom: 2px black solid;
+}
+
+.odd {
+    background-color: white;
+
+}
+
+.even {
+    background-color: #d3d3d3;
+}
+

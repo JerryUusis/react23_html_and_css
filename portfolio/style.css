@@ -1,0 +1,92 @@
+:root {
+    --primary-color: beige;
+    --secondary-color: peachpuff;
+    --accent-color: rgb(169, 240, 254);
+    --menu-font-color: #6e1717;
+    --header-font-color: #b1f7ff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    margin: 0 auto;
+}
+
+/* Nav section */
+
+nav {
+    position: fixed;
+    left: 25%;
+    right: 25%;
+
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 1rem;
+    margin: 0 0.25rem;
+}
+
+nav ul li:last-child {
+    margin-right: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--menu-font-color);
+}
+
+/* Hero section */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(img/background_lake.jpeg) no-repeat center center/cover;
+    height: 30vh;
+    position: static;
+    top: 0;
+    left: 0;
+    text-align: left;
+}
+
+.hero-section h1,
+.hero-section h2
+{
+    color: var(--header-font-color);
+    opacity: 0.85;
+    margin-bottom: 1rem;
+}
+
+.hero-section h1 {
+    font-size: 4em;
+}
+
+.hero-section h2 {
+    font-size: 2em;
+}
+
+/* Main section */
+
+
+
+main section {
+    padding: 4rem;
+    
+}
+
+section.odd {
+
+}
+

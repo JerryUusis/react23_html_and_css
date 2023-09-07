@@ -1,0 +1,103 @@
+:root {
+    --light-gray: #d5d5d5;
+    --medium-gray: #696969;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2b6649;
+    font-family: "Raleway";
+    min-height: 100vh;
+}
+
+/* Header text */
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+
+}
+
+h1 {
+    margin-bottom: 1.2rem;
+    color: #333;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Form section */
+
+.form-container {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin: auto;
+    max-width: 290px;
+}
+
+
+form {
+    color: var(--medium-gray);
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 0.7rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--medium-gray);
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    display: block;
+    color: #fff;
+    background-color: coral;
+    border-radius: 5px;
+    border-style: none;
+    margin: auto;
+    padding: 0.6rem;
+    width: 85%;
+    text-transform: uppercase;
+}
+
+.form-container p {
+    color: #333;
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: coral;
+    text-decoration: none;
+}
+
+.terms-and-conditions {
+    font-size: 0.7rem;
+    padding-bottom: 1rem;
+}
+
+.login {
+    margin-top: 1.5rem;
+    text-align: left;
+}
