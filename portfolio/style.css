@@ -1,10 +1,12 @@
 :root {
-    --primary-color: beige;
-    --secondary-color: peachpuff;
-    --accent-color: rgb(169, 240, 254);
+    --primary-color: #e2bbf2;
+    --secondary-color: #7b80a6;
+    --accent-color: #a9f0fe;
     --menu-font-color: #6e1717;
     --header-font-color: #b1f7ff;
 }
+
+/* #e7410a42; a nice shade */
 
 * {
     box-sizing: border-box;
@@ -20,7 +22,6 @@ body {
 /* Nav section */
 
 nav {
-    position: relative;
     display: block;
 }
 
@@ -31,11 +32,11 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    padding: 0.5rem 2rem;
+    padding: 0.75rem 2.5rem;
     font-size: 18px;
     vertical-align: middle;
     min-width: 100px;
-    margin: 1rem 0.25rem;
+    margin: 1rem 0.25rem 3rem;
 }
 
 nav ul li:last-child {
@@ -72,7 +73,7 @@ nav ul li a {
 
 .hero-section h2 {
     padding: 3rem;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 /* Main section */
@@ -83,9 +84,16 @@ main p {
 }
 
 main section {
-    padding: 3rem;
+    padding: 3.5rem;
+    color: #002847;
 }
 
 section.odd {
-
+    background-color: var(--primary-color);
 }
+
+section.even {
+    background-color: #fde2cfa2;
+}
+
+/* Form section */
