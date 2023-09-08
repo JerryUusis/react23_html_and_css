@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+    color: #00004ddb;
+    background-color: peachpuff;
+}
+
+h1 {
+    letter-spacing: 5px;
+    padding: 1rem;
+}
+
+h2 {
+    margin: 1rem 0;
+}
+
+.text-container {
+    padding: 1rem;
+}
+
+section {
+    width: 32%;
+    display: block;
+    margin: 1rem;
+}
+
+main {
+    display: flex;
+    width: 90%;
+    flex-flow: nowrap;
+    margin: auto;
+}
+
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+@media screen and (max-width: 710px) {
+    main {
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    section {
+        margin:0 auto;
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+
+    
+}
+
