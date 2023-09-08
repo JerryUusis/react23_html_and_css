@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 0 1rem;
+}
+
+h1 {
+    color: white;
+    letter-spacing: 3px;
+    flex: 3;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex: 1;
+}
+
+ul li {
+    font-size: 1.125rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    background-color: darkgreen;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    background-color: lightgreen;
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.box {
+    background-color: rgb(212, 69, 53);
+    color: white;
+    letter-spacing: 1px;
+    margin: 1rem;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
