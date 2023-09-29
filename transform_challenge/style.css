@@ -1,0 +1,61 @@
+:root {
+    --gradient: linear-gradient(to left, coral,
+    lightblue,
+    beige,
+    lightpink);
+    --font: "Spartan", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--gradient);
+    height: 100vh;
+    width: 100vw;
+    font-family: var(--font);
+}
+
+.first-task {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    background-color: darkblue;
+}
+
+@keyframes task1 {
+    0% {
+        background-color: darkviolet;
+        width: 125px;
+        height: 125px;
+    }
+    25% {
+        background-color: maroon;
+        width: 150px;
+        height: 150px;
+    }
+
+    50% {
+        background-color: hotpink;
+        width: 175px;
+        height: 175px;
+    }
+
+    75% {
+        background-color: gold;
+        width: 150px;
+        height: 150px;
+    }
+
+    100% {
+        background-color: darkviolet;
+        width: 125px;
+        height: 125px;
+    }
+}
+
+.first-task:hover {
+    animation: task1 3s linear;
+    animation-iteration-count: infinite;
+}
