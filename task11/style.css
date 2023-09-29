@@ -1,0 +1,63 @@
+:root {
+    --background-color: cornsilk;
+    --light-color: rgb(254, 34, 247);
+    --highlight-color: salmon;
+    --dark-color: rgb(6, 2, 75);
+    --font: "Nunito Sans", sans-serif;
+    --element-width: 150px;
+    --gradient: linear-gradient(
+        to right top,
+        coral,
+        orange,
+        pink,
+        beige
+    );
+    --transition-properties: all ease-in-out 250ms;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-color);
+    font-family: var(--font);
+    background: var(--gradient);
+    height: 100vh;
+    width: 100vw;
+}
+
+.card {
+    height: 200px;
+    width: var(--element-width);
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px;
+    box-shadow: 0 0 5px;
+    transition: var(--transition-properties);
+    
+}
+
+.card:hover {
+    transform: rotate(100deg);
+}
+
+.circle {
+    height: var(--element-width);
+    width: var(--element-width);
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px;
+}
