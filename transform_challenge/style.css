@@ -1,9 +1,10 @@
 :root {
-    --gradient: linear-gradient(to left, coral,
+    --gradient: linear-gradient(45deg, coral,
     lightblue,
     beige,
     lightpink);
     --font: "Spartan", sans-serif;
+    --transition: all ease-in-out 250ms;
 }
 
 * {
@@ -11,22 +12,48 @@
 }
 
 body {
-    background: var(--gradient);
+    background-image: var(--gradient);
+    background-size: 300%;
     height: 100vh;
     width: 100vw;
     font-family: var(--font);
+    animation: background-loop 15s linear alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes background-loop {
+   0% {
+        background-position: left;
+    }   
+    100% {
+        background-position: right;
+    }
+}
+
+.answer-element {
+    height: 125px;
+    width: 125px;
+    padding: 1rem;
+
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .first-task {
-    height: 125px;
-    width: 125px;
     border-radius: 50%;
-    background-color: darkblue;
+    transition: all 20ms ease-in-out;
+}
+
+.first-task:hover {
+    animation: task1 3s linear;
+    animation-iteration-count: infinite;
 }
 
 @keyframes task1 {
     0% {
-        background-color: darkviolet;
+        background-color: darkblue;
         width: 125px;
         height: 125px;
     }
@@ -49,13 +76,83 @@ body {
     }
 
     100% {
-        background-color: darkviolet;
+        background-color: darkblue;
         width: 125px;
         height: 125px;
     }
 }
 
-.first-task:hover {
-    animation: task1 3s linear;
+.second-task {
+    transition: var(--transition);
+}
+
+.second-task:hover {
+    transform: rotate(180deg);
+    background-color: chartreuse;
+}
+
+.third-task {
+    transition: all ease-in-out 250ms;
+}
+
+.third-task:hover {
+    color: #fb976f;
+    height: 100px;
+    width: 100px;
+}
+
+.fifth-task {
+    color: #fb976f;
+    border: 0 solid darkblue;
+    transition: var(--transition);
+}
+
+.fifth-task:hover {
+    border: 5px solid chartreuse;
+    filter: drop-shadow(0 0 10px #333);
+}
+
+.animated-circle {
+    color: #fb976f;
+    border: solid brown 2px;
+    border-radius: 50%;
+    position: relative;
+    top:0;
+    left: 0;
+    animation: task6 3s linear;
     animation-iteration-count: infinite;
+}
+
+@keyframes task6 {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        border-radius: 0;
+        top: 0;
+        left: 200px;
+    }
+
+    50% {
+        border-radius: 50%;
+        top: -200px;
+        left: 200px;
+    }
+
+    75% {
+        border-radius: 0;
+        top: -200px;
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+.animated-circle:hover {
+    animation-play-state: paused;
 }
