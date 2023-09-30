@@ -2,6 +2,7 @@
     --primary-color: #e2bbf2;
     --secondary-color: #7b80a6;
     --accent-color: #a9f0fe;
+    --dark-color: #002847;
     --menu-font-color: #6e1717;
     --header-font-color: #b1f7ff;
 }
@@ -15,6 +16,7 @@
 }
 
 body {
+    font-family: "Open Sans", sans-serif;
     background-color: var(--primary-color);
     margin: 0 auto;
 }
@@ -68,7 +70,7 @@ nav ul li a {
 }
 
 .hero-section h1 {
-    font-size: 4em;
+    font-size: 4rem;
 }
 
 .hero-section h2 {
@@ -85,7 +87,7 @@ main p {
 
 main section {
     padding: 3.5rem;
-    color: #002847;
+    color: var(--dark-color);
 }
 
 section.odd {
@@ -97,3 +99,57 @@ section.even {
 }
 
 /* Form section */
+
+.form-section {
+    color: var(--dark-color);
+}
+
+.form-section h2 {
+    padding: 1.5rem;
+    text-align: center;
+
+}
+
+section.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-color);
+    background-color: var(--dark-color);
+    padding: 3.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.label-container {
+    margin: 1.5rem;
+    vertical-align: center;
+}
+
+label {
+    display: inline-block;
+    font-size: 1.125rem;
+    width: 150px;
+}
+
+label + textarea {
+    display: inline-block;
+    vertical-align: top;
+}
+
+input,
+textarea {
+
+    padding: 0.5rem;
+    width: 300px;
+}
+
+button.submit-button {
+    align-self: center;
+}
+
