@@ -107,7 +107,6 @@ section.even {
 .form-section h2 {
     padding: 1.5rem;
     text-align: center;
-
 }
 
 section.form-section {
@@ -151,5 +150,6 @@ textarea {
 
 button.submit-button {
     align-self: center;
+    margin: 1.5rem;
 }
 
